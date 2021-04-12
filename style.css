@@ -1,0 +1,23 @@
+body {
+    font-size: 0.9375rem;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
