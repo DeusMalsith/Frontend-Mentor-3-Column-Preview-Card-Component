@@ -1,5 +1,5 @@
 body {
-    font-size: 0.9375rem;
+  font-size: 0.9375rem;
 }
 
 .test {
@@ -7,23 +7,22 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-column: auto;
+  display: inline-flex;
 }
 
 .card1 {
-    background-color: hsl(31, 77%, 52%);
-    width: 20%;
+  background-color: hsl(31, 77%, 52%);
+  width: 20%;
 }
 
 .card2 {
-    background-color: hsl(184, 100%, 22%);
-    width: 20%;
+  background-color: hsl(184, 100%, 22%);
+  width: 20%;
 }
 
 .card3 {
-    background-color: hsl(179, 100%, 13%);
-    width: 20%;
+  background-color: hsl(179, 100%, 13%);
+  width: 20%;
 }
 
 .attribution {
