@@ -3,13 +3,28 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
 }
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   font-size: 2rem;
-  color: white;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+button {
+  margin-top: 70px;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  border: none;
 }
 
 .test {
@@ -23,25 +38,41 @@ h1 {
 }
 
 .inner-container {
-  margin: 15%;
+  margin: 48px;
 }
 
 .card1 {
   background-color: hsl(31, 77%, 52%);
-  width: 15%;
-  height: 400px;
+  width: 20%;
+  height: 500px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card1 button {
+  color: hsl(31, 77%, 52%);
 }
 
 .card2 {
   background-color: hsl(184, 100%, 22%);
-  width: 15%;
-  height: 400px;
+  width: 20%;
+  height: 500px;
+}
+
+.card2 button {
+  color: hsl(184, 100%, 22%);
 }
 
 .card3 {
   background-color: hsl(179, 100%, 13%);
-  width: 15%;
-  height: 400px;
+  width: 20%;
+  height: 500px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card3 button {
+  color: hsl(179, 100%, 13%);
 }
 
 .attribution {
