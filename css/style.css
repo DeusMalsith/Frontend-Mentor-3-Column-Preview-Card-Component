@@ -34,20 +34,19 @@ button {
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
 .inner-container {
-  margin: 48px;
+  margin: 3rem;
 }
 
 .card1 {
   background-color: hsl(31, 77%, 52%);
-  width: 20%;
-  height: 100%;
+  width: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -64,8 +63,7 @@ button {
 
 .card2 {
   background-color: hsl(184, 100%, 22%);
-  width: 20%;
-  height: 100%;
+  width: 100%;
 }
 
 .card2 button {
@@ -80,8 +78,7 @@ button {
 
 .card3 {
   background-color: hsl(179, 100%, 13%);
-  width: 20%;
-  height: 100%;
+  width: 100%;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
