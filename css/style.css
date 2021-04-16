@@ -10,18 +10,19 @@ body {
 h1 {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: hsl(0, 0%, 95%);
 }
 
 p {
   line-height: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 button {
   margin-top: 70px;
-  width: 150px;
-  height: 50px;
+  width: 148px;
+  height: 48px;
   border-radius: 25px;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
@@ -32,12 +33,16 @@ button {
   border: 2px solid red;
 }
 
+.outer-container {
+  margin: 10% auto;
+}
+
 .container {
   display: flex;
   justify-content: center;
   height: 100%;
   max-width: 60%;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .inner-container {
@@ -61,6 +66,12 @@ button {
   cursor: pointer;
 }
 
+.card1 button:focus {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+  outline: none;
+}
+
 .card2 {
   background-color: hsl(184, 100%, 22%);
   width: 100%;
@@ -74,6 +85,12 @@ button {
   color: hsl(0, 0%, 95%);
   background-color: hsl(184, 100%, 22%);
   cursor: pointer;
+}
+
+.card2 button:focus {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  outline: none;
 }
 
 .card3 {
@@ -91,6 +108,12 @@ button {
   color: hsl(0, 0%, 95%);
   background-color: hsl(179, 100%, 13%);
   cursor: pointer;
+}
+
+.card3 button:focus {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+  outline: none;
 }
 
 .attribution {
