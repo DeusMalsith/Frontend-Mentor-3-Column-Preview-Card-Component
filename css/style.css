@@ -26,6 +26,15 @@ body {
 
 h1 {
   color: var(--color-neutral-lightgray);
+  font-family: var(--ff-accent);
+  font-size: 2.7rem;
+  padding-top: 1.5rem;
+}
+
+p {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 2em;
 }
 
 button {
@@ -80,6 +89,6 @@ button {
   }
 
   .inner-container {
-    padding: 2.333rem;
+    padding: 3rem;
   }
 }
