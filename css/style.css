@@ -1,146 +1,85 @@
-body {
+:root {
+  --color-primary-orange: hsl(31, 77%, 52%);
+  --color-primary-cyan: hsl(184, 100%, 22%);
+  --color-primary-dcyan: hsl(179, 100%, 13%);
+
+  --color-neutral-transwhite: hsla(0, 0%, 100%, 0.75);
+  --color-neutral-lightgray: hsl(0, 0%, 95%);
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-accent: "Big Shoulders Display", cursive;
   font-size: 15px;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  color: hsla(0, 0%, 100%, 0.75);
-  background-color: hsl(0, 0%, 95%);
+}
+
+body,
+h1,
+p,
+button,
+img {
   margin: 0;
 }
 
-h1 {
-  font-family: "Big Shoulders Display", cursive;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: hsl(0, 0%, 95%);
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--color-neutral-lightgray);
 }
 
-p {
-  line-height: 1.5rem;
-  color: hsla(0, 0%, 100%, 0.75);
+h1 {
+  color: var(--color-neutral-lightgray);
 }
 
 button {
-  margin-top: 70px;
-  width: 148px;
-  height: 48px;
-  border-radius: 25px;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  border: 2px solid hsl(0, 0%, 95%);
+  font-family: var(--ff-primary);
+  background-color: var(--color-neutral-lightgray);
+  width: 9.533rem;
+  height: 2.867rem;
+  border-radius: 1.667rem;
+  border: 2px var(--color-neutral-lightgray) solid;
 }
 
-.test {
-  border: 2px solid red;
+.card-sedans {
+  background-color: var(--color-primary-orange);
+  color: var(--color-neutral-transwhite);
+  border-top-left-radius: 0.5333rem;
+  border-top-right-radius: 0.5333rem;
 }
 
-/* .outer-container {
-  margin: 10% auto;
-} */
-
-.container {
-  display: flex;
-  justify-content: center;
-  /* height: 100%; */
-  max-width: 60%;
-  margin: 2% auto;
+.card-sedans button {
+  color: var(--color-primary-orange);
 }
 
-.inner-container {
-  margin: 3rem;
+.card-suvs {
+  background-color: var(--color-primary-cyan);
+  color: var(--color-neutral-transwhite);
 }
 
-.card1 {
-  background-color: hsl(31, 77%, 52%);
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.card-suvs button {
+  color: var(--color-primary-cyan);
 }
 
-.card1 button {
-  color: hsl(31, 77%, 52%);
+.card-luxury {
+  background-color: var(--color-primary-dcyan);
+  color: var(--color-neutral-transwhite);
+  border-bottom-left-radius: 0.5333rem;
+  border-bottom-right-radius: 0.5333rem;
 }
 
-.card1 button:hover {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(31, 77%, 52%);
-  cursor: pointer;
+.card-luxury button {
+  color: var(--color-primary-dcyan);
 }
 
-.card1 button:focus {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(31, 77%, 52%);
-  outline: none;
-}
-
-.card2 {
-  background-color: hsl(184, 100%, 22%);
-  width: 100%;
-}
-
-.card2 button {
-  color: hsl(184, 100%, 22%);
-}
-
-.card2 button:hover {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(184, 100%, 22%);
-  cursor: pointer;
-}
-
-.card2 button:focus {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(184, 100%, 22%);
-  outline: none;
-}
-
-.card3 {
-  background-color: hsl(179, 100%, 13%);
-  width: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.card3 button {
-  color: hsl(179, 100%, 13%);
-}
-
-.card3 button:hover {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(179, 100%, 13%);
-  cursor: pointer;
-}
-
-.card3 button:focus {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(179, 100%, 13%);
-  outline: none;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: black;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media screen and (max-width: 600px) {
-  .container {
+@media screen and (max-width: 376px) {
+  footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .card1 {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0px;
+  .container {
+    margin: 5.667rem 1.667rem;
   }
 
-  .card3 {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 0px;
+  .inner-container {
+    padding: 2.333rem;
   }
 }
