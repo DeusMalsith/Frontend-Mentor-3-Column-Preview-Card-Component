@@ -24,6 +24,10 @@ body {
   background-color: var(--color-neutral-lightgray);
 }
 
+footer {
+  font-size: 0.9rem;
+}
+
 h1 {
   color: var(--color-neutral-lightgray);
   font-family: var(--ff-accent);
@@ -44,6 +48,7 @@ button {
   height: 2.867rem;
   border-radius: 1.667rem;
   border: 2px var(--color-neutral-lightgray) solid;
+  cursor: pointer;
 }
 
 .card-sedans {
@@ -57,6 +62,11 @@ button {
   color: var(--color-primary-orange);
 }
 
+.card-sedans button:active {
+  background-color: var(--color-primary-orange);
+  color: var(--color-neutral-lightgray);
+}
+
 .card-suvs {
   background-color: var(--color-primary-cyan);
   color: var(--color-neutral-transwhite);
@@ -64,6 +74,11 @@ button {
 
 .card-suvs button {
   color: var(--color-primary-cyan);
+}
+
+.card-suvs button:active {
+  background-color: var(--color-primary-cyan);
+  color: var(--color-neutral-lightgray);
 }
 
 .card-luxury {
@@ -75,6 +90,11 @@ button {
 
 .card-luxury button {
   color: var(--color-primary-dcyan);
+}
+
+.card-luxury button:active {
+  background-color: var(--color-primary-dcyan);
+  color: var(--color-neutral-lightgray);
 }
 
 @media screen and (max-width: 376px) {
