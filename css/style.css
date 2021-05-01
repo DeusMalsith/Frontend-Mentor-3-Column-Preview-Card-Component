@@ -142,7 +142,8 @@ button {
   .container {
     display: flex;
     flex-direction: row;
-    margin: 11.33rem 17.33rem;
+    margin: 11.33rem auto;
+    max-width: 66.8rem;
   }
 
   .inner-container {
